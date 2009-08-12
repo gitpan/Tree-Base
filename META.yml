@@ -1,6 +1,6 @@
 ---
 name: Tree-Base
-version: v0.10.1
+version: v0.10.2
 author:
   - 'Eric Wilhelm @ <ewilhelm at cpan dot org>'
 abstract: a base class for trees
@@ -10,18 +10,20 @@ resources:
   homepage: http://scratchcomputing.com/
   license: http://dev.perl.org/licenses/
   repository: http://svn.scratchcomputing.com/Tree-Base/trunk
-requires:
-  Scalar::Util: 0
 build_requires:
   Module::Build: 0.26
   Test::More: 0
+requires:
+  Scalar::Util: 0
+configure_requires:
+  Module::Build: 0.34
 provides:
   Tree::Base:
     file: lib/Tree/Base.pm
-    version: v0.10.1
+    version: v0.10.2
   Tree::Base::Knob:
     file: lib/Tree/Base.pm
-generated_by: Module::Build version 0.3103
+generated_by: Module::Build version 0.3406
 meta-spec:
-  url: http://module-build.sourceforge.net/META-spec-v1.2.html
-  version: 1.2
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4

@@ -1,5 +1,5 @@
 package Tree::Base;
-$VERSION = v0.10.1;
+$VERSION = v0.10.2;
 
 use warnings;
 use strict;
@@ -129,7 +129,7 @@ The root node ($tree if $tree is the root.)
 
 sub root {
   my $self = shift;
-  return($self->{parent} ? $self->{root} : $self);
+  return(exists($self->{parent}) ? $self->{root} : $self);
 } # root ###############################################################
 
 =head2 is_root
